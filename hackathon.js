@@ -34,15 +34,23 @@ function initMap() {
   document.getElementById('resize-button').addEventListener('click', function (e){
     
 
-    var new_height = ($('#map').height() == 300) ? 1000 : 300;
-    var new_width = ($('#map').width() == 500) ? 2000 : 500;
+    var new_height = ($('#map').height() == 300) ? 7000 : 300;
+    var new_width = ($('#map').width() == 500) ? 1400 : 500;
     $('#map').animate({
         height: new_height,
         width: new_width
     });
 
+      $( "body" ).css( "height", new_height);
+
   });
 }
+
+// html, body {
+//   height: 100%;
+//   margin: 0;
+//   padding: 0;
+// }
 
 
 function calculateAndDisplayRoute(directionsService, directionsDisplay) {
