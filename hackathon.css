@@ -2,21 +2,17 @@
  * element that contains the map. */
 #map {
   height: 300px;
-  /*z-index: -1;*/
   position: relative;
   width: 500px;
 }
-/* Optional: Makes the sample page fill the window. */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
-#floating-panel {
+
+.floating-panel {
   position: absolute;
-  top: 10px;
-  left: 25%;
-  z-index: 5;
   background-color: #fff;
   padding: 5px;
   border: 1px solid #999;
@@ -24,4 +20,26 @@ html, body {
   font-family: 'Roboto','sans-serif';
   line-height: 30px;
   padding-left: 10px;
+}
+
+#floating-panel-1 {
+  top: 10px;
+  left: 125px;
+  z-index: 5;
+  width: 350px;
+}
+
+#floating-panel-2 {
+  top: 55px;
+  left: 125px;
+  z-index: 5;
+  width: 250px;
+}
+
+#resize-button {
+  font-weight: bold;
+  top: 55px;
+  left: 397px;
+  z-index: 5;
+  width: 95px;
 }
